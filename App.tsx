@@ -17,6 +17,7 @@ import React from "react";
 import List from "./List";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Checkbox from "expo-checkbox";
+import RootNavigator from "./src/Index";
 interface newTodo {
   [datenow: string]: { text: string,
     work: boolean, 
@@ -103,45 +104,49 @@ export default function App() {
     setresttext((cur) => e);
   };
   return (
-    <Animated.View style={mainstyle.container} >
-      <View style={mainstyle.emptyheader}></View>
-      <View style={mainstyle.top_BtnContainer}>
-        <TouchableOpacity
-          onPress={() => {
-            work();
-          }}
-        >
-          <Text
-            style={working ? mainstyle.btn_pressed : mainstyle.btn_notpressed}
-          >
-            Work
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            rest();
-          }}
-        >
-          <Text
-            style={working ? mainstyle.btn_notpressed : mainstyle.btn_pressed}
-          >
-            Rest
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <List 
-      working={working} 
-      resttext={resttext} 
-      changeresttext={changeresttext}
-      changetext={changetext} 
-      text={text} 
-      add_Todo={add_Todo} 
-      deleteTodos={deleteTodos}
-      todos={todos} 
-      completeTodos={completeTodos}
-      deleteAllTodos={deleteAllTodos}
-/>
-    </Animated.View>
+    <>
+    <RootNavigator/>
+     <StatusBar style="auto"/>
+    </>
+//     <Animated.View style={mainstyle.container} >
+//       <View style={mainstyle.emptyheader}></View>
+//       <View style={mainstyle.top_BtnContainer}>
+//         <TouchableOpacity
+//           onPress={() => {
+//             work();
+//           }}
+//         >
+//           <Text
+//             style={working ? mainstyle.btn_pressed : mainstyle.btn_notpressed}
+//           >
+//             Work
+//           </Text>
+//         </TouchableOpacity>
+//         <TouchableOpacity
+//           onPress={() => {
+//             rest();
+//           }}
+//         >
+//           <Text
+//             style={working ? mainstyle.btn_notpressed : mainstyle.btn_pressed}
+//           >
+//             Rest
+//           </Text>
+//         </TouchableOpacity>
+//       </View>
+//       <List 
+//       working={working} 
+//       resttext={resttext} 
+//       changeresttext={changeresttext}
+//       changetext={changetext} 
+//       text={text} 
+//       add_Todo={add_Todo} 
+//       deleteTodos={deleteTodos}
+//       todos={todos} 
+//       completeTodos={completeTodos}
+//       deleteAllTodos={deleteAllTodos}
+// />
+//     </Animated.View>
   );
 }
 

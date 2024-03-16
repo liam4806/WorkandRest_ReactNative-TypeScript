@@ -31,6 +31,7 @@ const List = (props: {
   todos: newTodo;
   completeTodos: (key: string)=> void;
   deleteAllTodos: (state: boolean) => void;
+  godetail: (key:string)=>void;
 }) => {
     const fadeAnim = useRef(new Animated.Value(0)).current;
     const textAnim = useRef(new Animated.Value(0)).current;
@@ -80,7 +81,11 @@ const List = (props: {
                         props.completeTodos(k as string);
                       }}
                     />
-                    <Text style={mainstyle.lists_text}>{todo.text}</Text>
+                    <TouchableOpacity onPress={()=>{
+                      props.godetail(k as string);
+                    }}>
+                      <Text style={mainstyle.lists_text}>{todo.text}</Text>
+                    </TouchableOpacity>
                     <TouchableOpacity
                       onPress={() => {
                         props.deleteTodos(k as string);
