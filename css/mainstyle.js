@@ -71,7 +71,7 @@ const mainstyle = StyleSheet.create({
     padding:20,
     paddingHorizontal:30,
     alignItems: "flex-end",
-  }
+  },
 });
 
 export default mainstyle;

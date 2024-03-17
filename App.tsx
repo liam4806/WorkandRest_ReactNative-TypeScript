@@ -108,45 +108,6 @@ export default function App() {
     <RootNavigator/>
      <StatusBar style="auto"/>
     </>
-//     <Animated.View style={mainstyle.container} >
-//       <View style={mainstyle.emptyheader}></View>
-//       <View style={mainstyle.top_BtnContainer}>
-//         <TouchableOpacity
-//           onPress={() => {
-//             work();
-//           }}
-//         >
-//           <Text
-//             style={working ? mainstyle.btn_pressed : mainstyle.btn_notpressed}
-//           >
-//             Work
-//           </Text>
-//         </TouchableOpacity>
-//         <TouchableOpacity
-//           onPress={() => {
-//             rest();
-//           }}
-//         >
-//           <Text
-//             style={working ? mainstyle.btn_notpressed : mainstyle.btn_pressed}
-//           >
-//             Rest
-//           </Text>
-//         </TouchableOpacity>
-//       </View>
-//       <List 
-//       working={working} 
-//       resttext={resttext} 
-//       changeresttext={changeresttext}
-//       changetext={changetext} 
-//       text={text} 
-//       add_Todo={add_Todo} 
-//       deleteTodos={deleteTodos}
-//       todos={todos} 
-//       completeTodos={completeTodos}
-//       deleteAllTodos={deleteAllTodos}
-// />
-//     </Animated.View>
   );
 }
 
