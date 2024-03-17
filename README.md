@@ -4,9 +4,6 @@
 
 ### Resting well is as important as working hard! Plan the rest and work together!
 
-## Demo video
-https://github.com/liam4806/WorkandRest_ReactNative-TypeScript/assets/95008167/4fd30d52-ae47-458d-b62e-b8f08df6e461
-
 ## Functionalities:
 
 #### Adding task
@@ -14,6 +11,9 @@ Uses the device storage to save data.
 To-do lists are separately manege by "Work" and "Rest"
 
 https://github.com/liam4806/WorkandRest_ReactNative-TypeScript/assets/95008167/755b8671-de55-4d9e-b2ea-adda0db70b8e
+
+https://github.com/liam4806/WorkandRest_ReactNative-TypeScript/assets/95008167/59f601ca-1e04-4ddc-9a75-4e63c73e7235
+
 
 #### Mark as complete
 Completed tasks will go under the not completed tasks.
